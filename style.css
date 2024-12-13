@@ -1,0 +1,358 @@
+/* general settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start navBar styling */
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #DBC3A1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    nav button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        width: 200px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .nav-links a:hover {
+        background-color: #DBC3A1;
+    }
+}
+
+nav .brand {
+    width: 30%;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+    margin-left: 20px;
+}
+
+nav .brand img {
+    width: 19%;
+}
+
+nav ul {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+nav ul li a {
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* end navBar styling */
+
+/* start main styling */
+header {
+    margin-top: 70px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/headerBG.jpg) no-repeat center center/cover;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #DBC3A1;
+}
+
+header .container a {
+    padding: 20px;
+    background-color: #DBC3A1;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+header .container a:hover {
+    background-color: #fff;
+    color: #DBC3A1;
+}
+
+
+
+/* end main styling */
+
+/* start Store Styling */
+
+#store {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFCFEF;
+    padding-bottom: 30px;
+}
+
+#store h2 {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    color: #0A97B0;
+    font-weight: bold;
+}
+
+#store .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#store .container .product {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#store .container .product img {
+    width: 55%;
+}
+
+#store .container .product h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #1679AB;
+}
+
+#store .container .product h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #102C57;
+    margin-bottom: 30px;
+}
+
+#store .container .product button {
+    width: 200px;
+    height: 50px;
+    background-color: #FBB4A5;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+#store .container .product button:hover {
+    background-color: #FFCFEF;
+    color: #1679AB;
+}
+
+/* end Store styling */
+
+/* start contact styling */
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFCBCB;
+    padding-bottom: 25px;
+}
+
+#contact h2 {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    color: #0A97B0;
+    font-weight: bold;
+}
+
+#contact .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#contact .container img {
+    width: 40%;
+}
+
+#contact .container .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+#contact .container .input-container input {
+    width: 400px;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact .container .input-container textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#contact button {
+    width: 200px;
+    height: 50px;
+    background-color: #AF1740;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#contact button:hover {
+    background-color: #fff;
+    color: #0A97B0;
+}
+
+/* end contact styling */
+
+/* start footer styling */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A04747;
+    padding-bottom: 25px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer h4 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
